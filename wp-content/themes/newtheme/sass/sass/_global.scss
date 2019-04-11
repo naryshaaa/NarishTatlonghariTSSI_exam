@@ -1,0 +1,299 @@
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+body{
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  ul {
+    list-style-type: none;
+    padding: 0 !important;
+  }
+}
+
+header{
+  background-color: white;
+  width: 100%;
+  padding-top: 1%;
+  .logo{
+    margin: 10px auto;
+    vertical-align: middle;
+    @include mediaQueries (md){
+      margin-left: 25%;
+    }
+    @include mediaQueries (sm){
+      margin-left: 25%;
+    }
+    @include mediaQueries (xs){
+    margin-left: 25%;
+    }
+  }
+  .topInfo{
+    font-weight: bold;
+    @include mediaQueries (lg){
+      font-size: 14px;
+    }
+    .call_now{
+      color: black;
+      @include mediaQueries (xl){
+        font-size: 26px;
+      }
+      @include mediaQueries (lg){
+        font-size: 22px;
+      }
+    }
+    img{
+      top: -5px;
+      position: relative;
+    }
+  }
+}
+#orderSection{
+  background-image: url(https://www.thinkconveyancing.com.au/wp-content/uploads/Splash-MAP-BG-Brisbane.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2%;
+  #contentInfo{
+    li:nth-child(1) {
+      color: green;
+      font-size: 20px;
+
+    }
+    li:nth-child(2) {
+      color: white;
+      margin-bottom: 5%;
+      @include mediaQueries (xs){
+        font-size: 30px;
+      }
+      @include mediaQueries (sm){
+        font-size: 30px;
+      }
+      @include mediaQueries (md){
+        font-size: 35px;
+      }
+      @include mediaQueries (lg){
+        font-size: 35px;
+      }
+      @include mediaQueries (xl){
+        font-size: 40px;
+      }
+    }
+    li:nth-child(3) {
+      color: white;
+      font-weight: 300;
+      margin-bottom: 5%;
+      @include mediaQueries (xs){
+        font-size: 18px;
+      }
+      @include mediaQueries (sm){
+        font-size: 18px;
+      }
+      @include mediaQueries (md){
+        font-size: 22px;
+      }
+      @include mediaQueries (lg){
+        font-size: 25px;
+      }
+      @include mediaQueries (xl){
+        font-size: 25px;
+      }
+    }
+    li:nth-child(n+4) {
+      color: white;
+      font-size: 22px;
+      @include mediaQueries (xs){
+        font-size: 16px;
+      }
+      @include mediaQueries (sm){
+        font-size: 16px;
+      }
+      @include mediaQueries (md){
+        font-size: 19px;
+      }
+      @include mediaQueries (lg){
+        font-size: 20px;
+      }
+      @include mediaQueries (xl){
+        font-size: 20px;
+      }
+    }
+
+    .fa-check-circle-o{
+      color: green;
+    }
+    #leftImg{
+      margin: 5% 0px;
+      background-position: top left;
+      background-image: url(https://www.thinkconveyancing.com.au/wp-content/uploads/image-arrow-3.png);
+      padding-top: 20px!important;
+      padding-right: 70px!important;
+      padding-bottom: 20px!important;
+      padding-left: 1000px!important;
+      margin-left: -1000px!important;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      }
+    ul#imgContainer li {
+        display:inline-block;
+        width:20%;
+	  }
+  }
+  .topCate{
+    background-color: #1970B1	;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    .topSpan {
+      font-size: 19px;
+    }
+  }
+  .topCate::after{
+      content: '';
+      z-index: 5;
+      position: absolute;
+      margin: 0 auto;
+      top: 5.31rem;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: solid 15px #1970B1;
+      border-left: solid 15px transparent;
+      border-right: solid 15px transparent;
+  }
+  .bottomCate{
+    background-color: #085387;
+    .formCate{
+      padding: 20px 50px;
+    }
+  }
+}
+#choosePropSection{
+  background-image: url(https://www.thinkconveyancing.com.au/wp-content/uploads/gray_line_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  @include mediaQueries (xl){
+    height: 305px;
+  }
+  @include mediaQueries (lg){
+    height: 305px;
+  }
+  .card-body{
+    height: 150px;
+  //  width: 100px;
+  //  height: 105px;
+  }
+}
+#clientSay{
+    @include mediaQueries (xl){
+      .clientText{
+        margin-top: 180px;
+      }
+
+    }
+    @include mediaQueries (lg){
+    //  margin-top: -105px;
+      .clientText{
+        margin-top: 200px;
+      }
+
+    }
+    #commentContainer{
+      max-height: 500px;
+      overflow: auto;
+      @include mediaQueries (xl){
+      .card-columns {
+          -webkit-column-count: 4;
+          -moz-column-count: 4;
+          column-count: 4;
+            }
+      }
+
+      @include mediaQueries (lg){
+      .card-columns {
+          -webkit-column-count: 4;
+          -moz-column-count: 4;
+          column-count: 4;
+            }
+      }
+      @include mediaQueries (md){
+      .card-columns {
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+            }
+      }
+      @include mediaQueries (sm){
+      .card-columns {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+            }
+      }
+
+      @include mediaQueries (xs){
+      .card-columns {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+            }
+      }
+      .card{
+        .card-img-top{
+          width: 50% !important;
+        }
+        .display-name{
+          padding-top: 1% !important;
+          font-size: 12px !important;
+        }
+      }
+      .reply{
+        border-style: solid;
+        border-width: 0px 0px 0px 5px;
+        border-color: #228B22;
+        padding: 10px !important;
+        .fa-reply{
+          color: #32CD32;
+        }
+      }
+    }
+}
+#watchSection{
+  position: relative;
+  .laptop-wrapper{
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 20px;
+    .laptopFrame{
+      box-sizing: border-box;
+      background: url(https://www.thinkconveyancing.com.au/wp-content/uploads/laptop-frame-01_03-blk.png) center center no-repeat;
+      background-size: contain;
+      padding: 8% 10% 12% 12%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .fluidWrap{
+        width: 100%;
+        position: relative;
+        padding: 0;
+      }
+      .videoWrapper {
+      	position: relative;
+      	padding-bottom: 56.25%; /* 16:9 */
+      	padding-top: 25px;
+      	height: 0;
+      }
+      .videoWrapper iframe {
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      	width: 100%;
+      	height: 100%;
+      }
+    }
+  }
+}
